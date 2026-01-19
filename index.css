@@ -1,0 +1,114 @@
+:root {
+    --bg-primary: #0a0a0a;   
+    --bg-secondary: #121212; 
+    --text-primary: #ffffff; 
+    --text-secondary: #b3b3b3; 
+    --accent: #e5e5e5;       
+}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    font-family: Rubik, sans-serif;
+    min-height: 100vh;
+}
+
+.site-header {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    color: var(--text-secondary);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.hero-section {
+    position: relative;
+    flex: 1;
+
+    background-image: url("public/images/nyc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); 
+  z-index: 0;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 3rem;
+    border-radius: 16px;
+
+    background-color: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(6px);
+
+    /* max-width: 1000px;
+    width: 90%; */
+}
+
+
+.about-section {
+    padding: 2rem;
+    color: var(--text-primary);
+    max-width: 50vw;
+}
+
+.profile-picture-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.profile-picture-section img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.site-footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1rem;
+}
+
