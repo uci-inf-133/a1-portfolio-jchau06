@@ -15,12 +15,22 @@ body {
     background-color: var(--bg-primary);
     font-family: Rubik, sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .site-header {
     background-color: var(--bg-secondary);
-    padding: 1rem;
+    padding: 1.25rem 2rem;
     color: var(--text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .header-nav {
@@ -30,10 +40,37 @@ body {
 }
 
 .header-nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    gap: 1rem;
-    justify-content: right;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.header-nav a.active {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+}
+
+.header-nav a:hover {
+    color: var(--text-primary);
+    opacity: 0.85;
+}
+
+#header-title {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: var(--text-primary);
 }
 
 .hero-section {
@@ -109,6 +146,53 @@ body {
     background-color: var(--bg-secondary);
     color: var(--text-secondary);
     text-align: center;
-    padding: 1rem;
+    padding: 1.25rem 2rem;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.site-footer p {
+    margin: 0;
+    opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .content-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .profile-picture-section {
+        order: -1;
+        margin-top: 0;
+    }
+
+    .about-section {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture-section img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content-container {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .site-footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
