@@ -6,6 +6,8 @@
     --accent: #e5e5e5;       
 }
 
+
+
 html,
 body {
     margin: 0;
@@ -35,7 +37,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .header-nav ul {
@@ -70,14 +71,13 @@ main {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     color: var(--text-primary);
-    font-weight: 700;
 }
 
 .hero-section {
     position: relative;
     flex: 1;
 
-    background-image: url("public/images/nyc3.jpeg");
+    background-image: url("../public/images/nyc2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,40 +105,56 @@ main {
   z-index: 1;
 }
 
-.content-container h1 {
-    color: var(--text-primary);
-    margin-top: 1rem;
-    font-size: 2.5rem;
-    text-align: center;
-}
+.resume-section {
+    position: relative;
+    z-index: 1;
 
-.project-card {
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 3rem;
+    border-radius: 16px;
+
+    background-color: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(6px);
+
+    min-width: 80vw;
 }
 
-.project-card img.card-img-top {
-  height: 300px; 
-  object-fit: cover;
+.resume-section h1 {
+    color: var(--text-primary);
+    margin-bottom: 0;
+    font-size: 2rem;
 }
 
-.project-card .card-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1; 
+.resume-pdf {
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+
+    width: 100%;       
+    max-width: 800px;  
+    height: auto;      
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+
 }
 
-.project-card .btn {
-  margin-top: auto; 
-  align-self: flex-start;
+.download-resume-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-primary);
+    background-color: #3c3c3c;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+.download-resume-button:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-secondary);
 }
 
 .site-footer {
@@ -162,7 +178,38 @@ main {
     }
 }
 
+@media (max-width: 768px) {
+    .resume-section {
+        padding: 2rem 1.5rem;
+        min-width: 90vw;
+    }
+
+    .resume-pdf {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
+
+    .resume-section {
+        padding: 1.5rem 1rem;
+        min-width: 95vw;
+    }
+
+    .resume-pdf {
+        max-width: 100%;
+        border-width: 1px;
+        border-radius: 6px;
+    }
+
+    .resume-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .download-resume-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 
     .site-footer {
         padding: 1rem;

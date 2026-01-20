@@ -6,8 +6,6 @@
     --accent: #e5e5e5;       
 }
 
-
-
 html,
 body {
     margin: 0;
@@ -37,6 +35,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header-nav ul {
@@ -71,13 +70,14 @@ main {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     color: var(--text-primary);
+    font-weight: 700;
 }
 
 .hero-section {
     position: relative;
     flex: 1;
 
-    background-image: url("public/images/nyc.jpg");
+    background-image: url("../public/images/nyc3.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,41 +105,40 @@ main {
   z-index: 1;
 }
 
-.content-container {
-    position: relative;
-    z-index: 1;
-
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-
-    padding: 3rem;
-    border-radius: 16px;
-
-    background-color: rgba(18, 18, 18, 0.85);
-    backdrop-filter: blur(6px);
-
-    /* max-width: 1000px;
-    width: 90%; */
-}
-
-
-.about-section {
-    padding: 2rem;
+.content-container h1 {
     color: var(--text-primary);
-    max-width: 50vw;
-}
-
-.profile-picture-section {
     margin-top: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-.profile-picture-section img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img.card-img-top {
+  height: 300px; 
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+.project-card .btn {
+  margin-top: auto; 
+  align-self: flex-start;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
 }
 
 .site-footer {
@@ -161,35 +160,9 @@ main {
         flex-direction: column;
         gap: 1rem;
     }
-    
-    .content-container {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
-        text-align: center;
-    }
-    
-    .profile-picture-section {
-        order: -1;
-        margin-top: 0;
-    }
-
-    .about-section {
-        max-width: 100%;
-        padding: 0.5rem;
-    }
 }
 
 @media (max-width: 480px) {
-    .profile-picture-section img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .content-container {
-        padding: 1.5rem;
-        border-radius: 12px;
-    }
 
     .site-footer {
         padding: 1rem;
