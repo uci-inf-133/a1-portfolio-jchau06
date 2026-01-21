@@ -112,6 +112,8 @@ main {
     text-align: center;
 }
 
+/* CSS to style the project card components and images. */
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -183,6 +185,8 @@ main {
     margin: 0;
     opacity: 0.85;
 }
+
+/* Media queries for responsive design, bootstrap grid accounts for responsive features. */
 
 @media (max-width: 900px) {
     .header-nav {

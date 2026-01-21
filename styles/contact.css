@@ -114,6 +114,8 @@ main {
     gap: 3rem;
 }
 
+/* CSS to style the contact section and its components. */
+
 .contact-section {
     min-width: 50vw;
     width: 90%;

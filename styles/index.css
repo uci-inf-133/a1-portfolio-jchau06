@@ -1,3 +1,5 @@
+/* root is in every CSS file and provides variables for consistent coloring across pages. */
+
 :root {
     --bg-primary: #0a0a0a;   
     --bg-secondary: #121212; 
@@ -6,7 +8,7 @@
     --accent: #e5e5e5;       
 }
 
-
+/* consistent formatting for HTML and Body to structure each page. */
 
 html,
 body {
@@ -25,6 +27,8 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+/* header styling to create a stylish monochrome navigation bar and bold, upper-case logo */
 
 .site-header {
     background-color: var(--bg-secondary);
@@ -73,6 +77,8 @@ main {
     color: var(--text-primary);
 }
 
+/* each hero section is styled to be a near-full-screen background image of New York City underlaying the primary purpose of the page. */
+
 .hero-section {
     position: relative;
     flex: 1;
@@ -120,6 +126,7 @@ main {
     backdrop-filter: blur(6px);
 }
 
+/* CSS to style the about and profile picture sections and components. */
 
 .about-section {
     padding: 2rem;
@@ -138,6 +145,8 @@ main {
     height: 250px;
     object-fit: cover;
 }
+
+/* The CSS styling for the footer is in every CSS file to style icons and links. */
 
 .site-footer {
     background-color: var(--bg-secondary);
@@ -175,6 +184,8 @@ main {
     margin: 0;
     opacity: 0.85;
 }
+
+/* Media queries for responsive design including about and profile picture sections. */
 
 @media (max-width: 900px) {
     .header-nav {
