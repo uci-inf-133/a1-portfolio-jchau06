@@ -167,23 +167,108 @@ EMAIL: chaujt1@uci.edu
         </div>
       </section>
     </main>
+    <!doctype html>
+    <html lang="en">
+      <!--
+WRITTEN BY: Jonathan Chau
+EMAIL: chaujt1@uci.edu
+-->
+
+      <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Jonathan Chau" />
+        <meta
+          name="description"
+          content="A page dedicated to showing Jonathan Chau's projects."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/contact.css" />
+        <title>Jonathan Chau's Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/2e8a1327d7.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+      <body>
+        <header class="site-header">
+          <nav class="header-nav">
+            <h2 id="header-title">Jonathan Chau</h2>
+            <ul>
+              <li><a href="../pages/index.html">Home</a></li>
+              <li><a href="../pages/resume.html">Resume</a></li>
+              <li><a href="../pages/projects.html">Projects</a></li>
+              <li>
+                <a href="../pages/contact.html" class="active">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="hero-section">
+            <div class="content-container">
+              <section class="contact-section">
+                <form action="" method="post" class="contact-form">
+                  <h1>Contact Me!</h1>
+                  <section>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                  </section>
+                  <section>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                  </section>
+                  <section>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required />
+                  </section>
+                  <section>
+                    <label for="message">Message:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </section>
+
+                  <button type="submit">Send Message</button>
+                  <!-- This form is for aesthetic purposes only and does not have any backend functionality. -->
+                </form>
+              </section>
+            </div>
+          </section>
+        </main>
         <footer class="site-footer">
-      <section class="connect-section">
-        <section class="social-links">
-          <a href="https://www.linkedin.com/in/jonathan-chau06/" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/jchau06" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/chau_on_mein_street/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="mailto:jonathan.chau06ios@gmail.com" target="_blank"
-           ><i class="fa-solid fa-at"></i>
-          </a>
-      </section>
-      <p>&copy; 2026 Jonathan Chau. All rights reserved.</p>
-    </footer>
+          <div class="connect-section">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/jonathan-chau06/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/jchau06" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/chau_on_mein_street/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="mailto:jonathan.chau06ios@gmail.com" target="_blank"
+                ><i class="fa-solid fa-at"></i>
+              </a>
+            </div>
+          </div>
+          <p>&copy; 2026 Jonathan Chau. All rights reserved.</p>
+        </footer>
+      </body>
+    </html>
   </body>
 </html>
