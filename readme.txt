@@ -65,4 +65,4 @@ No other classmates or individuals were consulted as part of this assignment.
 
 
 7. Is there anything special we need to know in order to run your code?
-The repository is organized into folders to emphasize neatness. HTML pages are in the pages folder, assets such as images, pdfs, and bootstrap data is stored in the public folder. CSS sheets are in the styles folder, and all the screenshots for validation are in the validation folder. The routing for HTML pages use these folders in mind. 
+The repository is organized into folders to emphasize neatness. HTML pages are in the pages folder, assets such as images, pdfs, and bootstrap data is stored in the public folder. CSS sheets are in the styles folder, and all the screenshots for validation are in the validation folder. The routing for HTML pages use these folders in mind. Live Server was used to run the HTML pages in the browser. 
