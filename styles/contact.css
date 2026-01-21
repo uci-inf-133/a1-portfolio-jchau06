@@ -133,7 +133,7 @@ main {
     text-align: center;
 }
 
-.contact-form section {
+.contact-form div {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
